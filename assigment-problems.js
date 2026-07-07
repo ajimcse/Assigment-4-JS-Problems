@@ -21,7 +21,22 @@ function sendNotification(email) {
     return parts[0] + " sent you an email from " + parts[1];
 }
  
-const result = sendNotification('fahim234.hotmail.com')
+// const result = sendNotification('fahim234.hotmail.com')
+// console.log(result)
+
+function checkDigitsInName(name) {
+         
+    for (const ch of name) {
+        if (ch >= "0" && ch <= "9") {
+            return true;
+        }
+    }
+    return false;
+ 
+}
+
+const result = checkDigitsInName('Raj123')
 console.log(result)
 
  
+
